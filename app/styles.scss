@@ -15,33 +15,38 @@ body {
 	font-size:15px;
 }
 
+section {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
 h1 {
 	font-family: 'zooja';	
 }
 
 //helpers
 
-	//margin-top
+//margin-top
 @for $i from 0 through 10 {
 	.m-t-#{10*$i} {
 		margin-top: 10px*$i; 
 	}
 }
 
-	//padding-top
+//padding-top
 @for $i from 1 through 10 {
 	.p-t-#{10*$i} {
 		padding-top: 10px*$i; 
 	}
 }
-	//margin-bottom
+//margin-bottom
 @for $i from 1 through 10 {
 	.m-b-#{10*$i} {
 		margin-bottom: 10px*$i; 
 	}
 }
 
-	//margin-top-bottom
+//margin-top-bottom
 @for $i from 1 through 10 {
 	.m-t-b-#{10*$i} {
 		margin-top: 10px*$i; 
@@ -49,7 +54,7 @@ h1 {
 	}
 }
 
-	//padding-top-bottom
+//padding-top-bottom
 @for $i from 1 through 10 {
 	.p-t-b-#{10*$i} {
 		padding-top: 10px*$i; 
@@ -57,10 +62,29 @@ h1 {
 	}
 }
 
+.flt-left {
+	float:left;
+}
+
+.flt-right {
+	float:right;
+}
+
 .btn-green {
 	background-color: $green;
 	border-color: $green;
 	color:$white;
+}
+
+.btn-black {
+	border-color: $black;
+	color:$black;
+}
+
+.btn-black:hover {
+	background-color:$green;
+	color:$white;
+	border-color:$green;
 }
 
 .btn-round {
@@ -152,11 +176,90 @@ h1 {
 }
 
 .fleche-full {
-padding-top: 300px;
-font-size: 60px;
+	padding-top: 300px;
+	font-size: 60px;
 }
 //Section - Carte Interactive
 
+//Section - Bons Plans
+
+#bons-plans {
+	h2 {
+		font-size:15px;
+		font-weight: bold;
+	}
+}
+
+.bons-bloc {
+	min-height:400px;
+	background-color:$grey;
+	margin-left: 0;
+	margin-right: 0;
+
+	h4 {
+		font-weight: 400;
+	}
+	h5 {
+		font-weight: 400;
+	}
+
+	img {
+		width: 220px;
+		height: 220px;
+	}	
+	p {
+		padding:10px;
+	}		
+}
+
+.bons-bloc .row:nth-child(2) {
+	min-height:250px;
+}
+
+.offre-spe {
+	width: 70%;
+}
+
+.offre-spe-icon {
+	font-size: 86px;
+	color:$green;
+}
+
+.offre-spe-info {
+	font-size: 16px;
+	font-weight: 500;
+	background-color:$green;
+	margin-top:-38px;
+	padding: 31px 86px 12px 86px;
+	color: white;
+
+	div {
+		margin-top:5px;
+	}
+}
+
+.offre-btn {
+	color:$black;
+}
+//Section - Bons Plans
+
+
+// Responsive
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+	.offre-spe {
+	float: none;
+	margin-left:auto;
+	margin-right:auto;
+}
+}
+
+@media (max-width: 1200px) {
+
+}
 
 
 // Fonts 
@@ -174,94 +277,94 @@ font-size: 60px;
 // Custom Font-Icon
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?otfjvk');
-  src:  url('fonts/icomoon.eot?otfjvk#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?otfjvk') format('truetype'),
-    url('fonts/icomoon.woff?otfjvk') format('woff'),
-    url('fonts/icomoon.svg?otfjvk#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'icomoon';
+	src:  url('fonts/icomoon.eot?otfjvk');
+	src:  url('fonts/icomoon.eot?otfjvk#iefix') format('embedded-opentype'),
+	url('fonts/icomoon.ttf?otfjvk') format('truetype'),
+	url('fonts/icomoon.woff?otfjvk') format('woff'),
+	url('fonts/icomoon.svg?otfjvk#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: middle;
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	vertical-align: middle;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .icon-fleche-droite:before {
-  content: "\e913";
+	content: "\e913";
 }
 .icon-agenda:before {
-  content: "\e914";
+	content: "\e914";
 }
 .icon-logo_fakecity:before {
-  content: "\e900";
+	content: "\e900";
 }
 .icon-flower:before {
-  content: "\e901";
+	content: "\e901";
 }
 .icon-pastille:before {
-  content: "\e902";
+	content: "\e902";
 }
 .icon-marqueur:before {
-  content: "\e903";
+	content: "\e903";
 }
 .icon-Instagram:before {
-  content: "\e904";
+	content: "\e904";
 }
 .icon-Facebook:before {
-  content: "\e905";
+	content: "\e905";
 }
 .icon-YouTube:before {
-  content: "\e906";
+	content: "\e906";
 }
 .icon-enveloppe:before {
-  content: "\e907";
+	content: "\e907";
 }
 .icon-voiture:before {
-  content: "\e908";
+	content: "\e908";
 }
 .icon-brochures:before {
-  content: "\e909";
+	content: "\e909";
 }
 .icon-panneau_circuits:before {
-  content: "\e90a";
+	content: "\e90a";
 }
 .icon-loupe:before {
-  content: "\e90b";
+	content: "\e90b";
 }
 .icon-famille:before {
-  content: "\e90c";
+	content: "\e90c";
 }
 .icon-billetterie:before {
-  content: "\e90d";
+	content: "\e90d";
 }
 .icon-ampoule:before {
-  content: "\e90e";
+	content: "\e90e";
 }
 .icon-chateau:before {
-  content: "\e90f";
+	content: "\e90f";
 }
 .icon-carte_interactive:before {
-  content: "\e910";
+	content: "\e910";
 }
 .icon-fleche:before {
-  content: "\e911";
+	content: "\e911";
 }
 .icon-panier:before {
-  content: "\e912";
+	content: "\e912";
 }
 
 
