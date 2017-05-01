@@ -1,3 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
+
+
+
+$white: #ffffff;
+$black: #3f3e3e;
+$green: #1dbbae;
+$pink: #d4488a;
+
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  color: $black;
 }
+
+//Header
+
+.navbar {
+	margin: 0;
+	border:none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: $black;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: $green;
+    background-color:$white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: $pink;
+
+    background-color: transparent;
+}
+
+.navbar-default {
+	background:$white;
+	min-height: 80px;
+}
+
+.navbar-nav {
+    font-weight: bold;
+}
+
+.navbar-nav > li > a {
+    line-height: 44px;
+    min-height: 80px;
+ 	display: flex;
+  	align-items: center;
+  	justify-content: center;   
+}
+
+.navbar-brand {
+    line-height: 44px;
+    width:108px;
+}
+
+.navbar-right > li > a > span {
+	font-size: 30px;
+}
+
+
+
+.search {
+	padding: 0 25px;
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+
+//Header
+
+
+// Custom Font-Icon
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?j24ee4');
+  src:  url('fonts/icomoon.eot?j24ee4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?j24ee4') format('truetype'),
+    url('fonts/icomoon.woff?j24ee4') format('woff'),
+    url('fonts/icomoon.svg?j24ee4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo_fakecity:before {
+  content: "\e900";
+}
+.icon-flower:before {
+  content: "\e901";
+}
+.icon-pastille:before {
+  content: "\e902";
+}
+.icon-marqueur:before {
+  content: "\e903";
+}
+.icon-Instagram:before {
+  content: "\e904";
+}
+.icon-Facebook:before {
+  content: "\e905";
+}
+.icon-YouTube:before {
+  content: "\e906";
+}
+.icon-enveloppe:before {
+  content: "\e907";
+}
+.icon-voiture:before {
+  content: "\e908";
+}
+.icon-brochures:before {
+  content: "\e909";
+}
+.icon-panneau_circuits:before {
+  content: "\e90a";
+}
+.icon-loupe:before {
+  content: "\e90b";
+}
+.icon-famille:before {
+  content: "\e90c";
+}
+.icon-billetterie:before {
+  content: "\e90d";
+}
+.icon-ampoule:before {
+  content: "\e90e";
+}
+.icon-chateau:before {
+  content: "\e90f";
+}
+.icon-carte_interactive:before {
+  content: "\e910";
+}
+.icon-fleche:before {
+  content: "\e911";
+}
+.icon-panier:before {
+  content: "\e912";
+}
+
+// Custom Font-Icon
