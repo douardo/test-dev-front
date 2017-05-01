@@ -33,7 +33,7 @@
             <li><a href="#"><span class="icon-agenda"></span></a></li>
             <li class="active"><a href="#"><span class="icon-carte_interactive"></span></a></li>
             <li><a href="#"><span class="icon-panier"></span></a></li>
-            <li><a href="#"><span type="button" class="icon-loupe search" data-toggle="modal" data-target="#myModal"></span></a></li>
+            <li><a href="#"><span type="button" class="icon-loupe search" data-toggle="modal" data-target="#modal-fullscreen"></span></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -41,9 +41,13 @@
   </header>
   <section id="carte-interactive">
     <div class="container text-center">
-      <h1>la mystérieuse</h1>
-      <p>Découvrez le patrimoine de FakeCity</p>
-      <span class="fleche-full icon-fleche"></span>
+      <div>
+        <h1>la mystérieuse</h1>
+        <p>Découvrez le patrimoine de FakeCity</p>
+      </div>
+      <div class="m-t-100">
+        <span class="fleche-full icon-fleche"></span>
+      </div>
     </div>
 
   </section>
@@ -120,19 +124,41 @@
             </div>
           </a>
         </div>
-          <div class="col-md-6">
+        <div class="col-md-6">
           <a href="#">
             <div class="offre-spe text-center flt-left">
               <div class="offre-spe-icon"><span class="icon-famille"></span></div>
               <div class="offre-spe-info">DÉCOUVREZ NOS SÉJOURS SPÉCIAL FAMILLES !<div class="icon-fleche-droite" aria-hidden="true"></div></div>
             </div>  
           </a>
-          </div>
+        </div>
       </div>  
       <div class="row text-center m-t-40">
         <div class="offre-btn"><a href="#" class="btn btn-default btn-black btn-round">Tous les bons plans</a></div>
       </div>
     </div>
-  </section>    
+  </section>   
+  <div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="col-md-6 col-md-offset-3 modal-content m-t-100">
+        <div class="modal-header">
+          <div class="row">
+            <span type="button" class="modal-cls-button icon-close flt-right" data-dismiss="modal"><span class="sr-only">Close</span></span>
+          </div>
+          <h4 class="modal-title text-center" id="myModalLabel">Recherchez</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <div class="row">
+            <div class="col-md-10"><input type="text" class="search-form" id="searchForm" placeholder="Un lieu, un évènement, une activité...">
+              </div>
+              <div class="col-md-2"><button href="#" class="btn btn-default btn-round btn-orange">OK</button>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
 </body>
 </html>
