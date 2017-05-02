@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+
+$(".marqueur-carte").click(function(){
+  $( this ).find( ".bulle-carte" ).toggleClass("is-active animated fadeIn");
+});
+
+$(".offre-spe").hover(function(){
+  $( this ).find( ".to-anim" ).toggleClass("animated hinge infinite shake");
+});
+
 // .modal-backdrop classes
 
 $(".modal-transparent").on('show.bs.modal', function () {

@@ -19,9 +19,6 @@
     "clean-css-brunch": "^2",
     "uglify-js-brunch": "^2",
     "sass-brunch": "^2",
-    "pleeease-brunch": "^3",
-    "babel-brunch": "~6.0",
-    "babel-preset-latest": "^6",
-    "babel-preset-stage-0": "^6"
+    "pleeease-brunch": "^3"
   }
 }

@@ -33,24 +33,64 @@
             <li><a href="#"><span class="icon-agenda"></span></a></li>
             <li class="active"><a href="#"><span class="icon-carte_interactive"></span></a></li>
             <li><a href="#"><span class="icon-panier"></span></a></li>
-            <li><a href="#"><span type="button" class="icon-loupe search" data-toggle="modal" data-target="#modal-fullscreen"></span></a></li>
+            <li data-toggle="modal" data-target="#modal-fullscreen"><a href="#"><span type="button" class="icon-loupe search" ></span></a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </nav>
   </header>
+  <!-- Strate 1 --> 
   <section id="carte-interactive">
     <div class="container text-center">
+      <!-- Marqueurs carte intéractive -->
+      <div id="marqueur-first" class="marqueur-carte animated fadeInDownBig">
+        <img src="images/marqueur-chateau.png" alt="marqueur-carte">
+        <div id="bulle-one" class="bulle-carte">
+          <span class="icon-chateau"></span>
+          <h4>ANCIEN COUVENT</h4>
+          <h5>Venez vous imprégner de cette ambiance sereine</h5>
+          <a href="#" class="btn btn-default btn-sm btn-round btn-green">Localiser</a>
+          <div type="button" class="icon-close-noir bulle-close"></div>
+        </div>        
+      </div>
+      <div id="marqueur-second" class="marqueur-carte animated fadeInDownBig">
+        <img src="images/marqueur-panneau.png" alt="marqueur-carte">
+        <div id="bulle-second" class="bulle-carte">
+          <span class="icon-brochures"></span>
+          <h4>CIRCUIT</h4>
+          <h5>Promenez-vous autour de différentes thématiques!</h5>
+          <a href="#" class="btn btn-default btn-sm btn-round btn-green">Localiser</a>
+          <div type="button" class="icon-close-noir bulle-close"></div>
+        </div>        
+      </div>
+      <div id="marqueur-third" class="marqueur-carte animated hinge fadeInDownBig">
+        <img src="images/marqueur-chateau.png" alt="marqueur-carte">
+        <div id="bulle-third" class="bulle-carte">
+          <span class="icon-chateau"></span>
+          <h4>CHATEAU DE MERVILLE</h4>
+          <h5>Découvrez son patrimoine, son parc...</h5>
+          <a href="#" class="btn btn-default btn-sm btn-round btn-green">Localiser</a>
+          <div type="button" class="icon-close-noir bulle-close"></div>
+        </div>
+      </div> 
+      <!-- /.Marqueurs carte intéractive -->   
+
+      <!-- Titre-logo -->  
       <div>
+        <img src="images/logo.png" alt="logo" class="logo-fakecity hidden-xs">
         <h1>la mystérieuse</h1>
         <p>Découvrez le patrimoine de FakeCity</p>
       </div>
       <div class="m-t-100">
-        <span class="fleche-full icon-fleche"></span>
+        <span class="fleche-full icon-fleche animated infinite flash long"></span>
       </div>
+      <!-- /.Titre-logo --> 
     </div>
 
   </section>
+  <!-- /.Strate 1 --> 
+
+  <!-- Strate Bons Plans --> 
   <section id="bons-plans">
     <div class="container text-center">
       <span class="icon-ampoule icontop"></span>
@@ -120,7 +160,7 @@
           <a href="#">
             <div class="offre-spe text-center flt-right">
               <div class="offre-spe-icon"><span class="icon-billetterie"></span></div>
-              <div class="offre-spe-info">PROFITEZ DE -20% SUR NOTRE BILLETTERIE !<div class="icon-fleche-droite" aria-hidden="true"></div></div>
+              <div class="offre-spe-info">PROFITEZ DE -20% SUR NOTRE BILLETTERIE !<div class="icon-fleche-droite to-anim" aria-hidden="true"></div></div>
             </div>
           </a>
         </div>
@@ -128,7 +168,7 @@
           <a href="#">
             <div class="offre-spe text-center flt-left">
               <div class="offre-spe-icon"><span class="icon-famille"></span></div>
-              <div class="offre-spe-info">DÉCOUVREZ NOS SÉJOURS SPÉCIAL FAMILLES !<div class="icon-fleche-droite" aria-hidden="true"></div></div>
+              <div class="offre-spe-info">DÉCOUVREZ NOS SÉJOURS SPÉCIAL FAMILLES !<div class="icon-fleche-droite to-anim" aria-hidden="true"></div></div>
             </div>  
           </a>
         </div>
@@ -137,7 +177,10 @@
         <div class="offre-btn"><a href="#" class="btn btn-default btn-black btn-round">Tous les bons plans</a></div>
       </div>
     </div>
-  </section>   
+  </section>  
+  <!-- /.Strate Bons Plans -->  
+
+  <!-- Modal Recherche --> 
   <div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="col-md-6 col-md-offset-3 modal-content m-t-100">
@@ -160,5 +203,8 @@
       </div>
     </div>
   </div> 
+  <!-- Modal Recherche --> 
+  
+
 </body>
 </html>
